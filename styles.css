@@ -1,0 +1,282 @@
+/*1. Global Styles*/
+
+html {
+    box-sizing: border-box;
+    font-size: 20px;
+    margin: 0px 0px;
+    text-align: center;
+    font-family: 'Fira Sans', sans-serif;
+    letter-spacing: 0.1rem;
+    color: black;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-style: italic;
+    word-spacing: 0.5rem;
+    letter-spacing: 0.2rem;
+}
+
+
+h2 {
+    font-family: 'Lora', serif;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    font-style: italic;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    font-family: 'Lora', serif;
+}
+
+
+/*2. header*/
+
+.logo {
+    padding-left: 1%;
+    font-family: 'Nothing You Could Do', cursive;
+    color: seashell;
+    text-shadow: 1px 0 black;
+}
+
+header {
+    height: 10%;
+    width: 100%;
+    border-bottom: 1px solid seashell;
+    background: 100% #123C73;
+    color: seashell;
+    position: fixed;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+}
+
+nav {
+    padding-right: 5rem;
+    
+}
+
+li a {
+    list-style-type: none;
+    text-decoration: none;
+    color: seashell;
+    padding: 0.5rem;
+}
+
+
+ul {
+    list-style-type: none;
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+
+/*3. main welcome-section*/
+.welcome-section {
+    color: #F2E8D5;
+    background-color: #0D0D0D;
+    position: relative;
+    top: 2.5em;
+    height: 15em;
+    padding-top: 2em;
+}
+
+
+/*4. main about*/
+.about {
+   background-color: #F2E8D5; 
+   padding-top: 5em;
+   padding-bottom: 2em;
+}
+
+ .photo {
+    width: 15em;
+    height: auto;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 2em;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.text {
+    text-align: justify;
+    padding-right: 2em;
+}
+
+/* 5. main skills*/
+.skills {
+    background-color: #F2E8D5;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.icon {
+    max-width: 5em;
+    height: auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* 6. main projects*/
+.projects {
+    background-color: #0D0D0D;
+    color: #F2E8D5;
+    padding-top: 0.75em;
+    padding-bottom: 2em;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    background-color: #F2E8D5;
+    padding: 1em 0.5em;
+}
+
+.project-title {
+    border: 1px solid #0D0D0D;
+    box-shadow: 1px 1px 2px #F2E8D5;
+    border-radius: 2px;
+    color:#F2E8D5;
+}
+
+.project-image {
+    
+    border-radius: 2px;
+    width: 15em;
+    height: auto;
+    padding: 0.2em;
+}
+
+.projects a{
+text-decoration: none;
+background-color: #0D0D0D;
+}
+
+/*main contact*/
+
+.contacts {
+    background-color: #0D0D0D;
+    color: #F2E8D5;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-links a {
+    text-decoration: none;
+    color:#F2E8D5;
+}
+
+.contact-icon {
+    width: 2em;
+    height: 2em;
+}
+
+.contact-icon:hover {
+    fill: blue;
+}
+
+/*footer*/
+
+footer {
+    background-color: #123C73;
+    color: #F2E8D5;
+    text-align: center;
+    width: 100%;
+    padding: 1em 1em;
+    border-top: 1px solid seashell;
+}
+
+footer p {
+    font-size: 0.8rem;
+}
+
+/*buttons*/
+
+button {
+    background-color: #277FF2;
+    padding: 0.5em 3em;
+    border: 1px solid seashell;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.2em #999;
+}
+
+button a {
+   text-decoration: none; 
+   color: seashell;
+}
+
+button:link,
+button:visited,
+button:hover {
+    background-color: seashell;
+    border: 1px solid #123C73;
+    border-radius: 0.5rem;
+    transition-duration: 1s;
+}
+button:link a,
+button:visited a,
+button:hover a {
+    color: #123C73;
+    background-color: seashell;
+}
+
+.button:active {
+    background-color: #F2E8D5;
+    box-shadow: 0 3px #666;
+    transform: translateY(3px);
+  }
+
+  a.btn.btn-show-all { 
+    background-color: #277FF2;
+}
+
+
+a.btn.btn-show-all:hover {
+    background-color: seashell;
+}
+
+/*media*/
+
+@media only screen and (max-width: px) {
+}
+    
+
+@media only screen and (max-width: px) {
+}
